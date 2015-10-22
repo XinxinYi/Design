@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Test{
+public class Factory{
 	public static void main(String [] args) {
 	//private numberA,numberB,operate;
 	Scanner sc = new Scanner(System.in);
