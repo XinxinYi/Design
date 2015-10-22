@@ -39,26 +39,24 @@ class JisuanFactory{
 
 
 
-class Inter{
-	public Double operate(Double numberA,Double numberB){
-		return 0.0;
-	}
+interface Inter{
+	public Double operate(Double numberA,Double numberB);
 }
-class Add extends Inter{
+class Add implements Inter{
 	public Double operate(Double numberA,Double numberB){
 			Double result = numberA + numberB;
 			return result;
 		}
 	
 	}
-class Sub extends Inter{
+class Sub implements Inter{
 	public Double operate(Double numberA,Double numberB){
 			Double result = numberA - numberB;
 			return result;
 		}
 	
 	}
-class Cheng extends Inter{
+class Cheng implements Inter{
 	public Double operate(Double numberA,Double numberB){
 			Double result = numberA * numberB;
 			return result;
